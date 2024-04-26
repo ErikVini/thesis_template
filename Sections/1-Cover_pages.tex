@@ -1,0 +1,109 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Página de título
+\newgeometry{centering}    %%% make the page centered on paper
+
+\AddToShipoutPicture*{\BackgroundPic}
+\thispagestyle{empty}%\addtocounter{page}{-1}
+\begin{center}
+  \vspace*{1.2cm}
+
+  \huge{Nome}
+
+  \vspace{4cm}
+
+  \begin{center}
+    \begin{Huge}
+      \textbf{Rascunho da tese}
+    \end{Huge}
+  \end{center}
+
+  \vfill
+
+  \huge{
+    São Paulo \\
+    \the\year\\
+  }
+\end{center}
+
+\newpage
+\shipout\null %Comando para adicionar uma página em branco 
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Página de assinaturas
+
+% \mbox{}
+% \null\vfill
+% \thispagestyle{empty}\addtocounter{page}{-1}
+
+% \begin{flushright}
+% \Large{São Paulo, \today}
+% \end{flushright}
+
+% \vspace{2cm}
+
+% \begin{multicols}{2}
+% \begin{center}
+
+% % \begin{figure}[H]
+% % \centering
+% % \includegraphics[scale=.124]{Assinatura 1}
+% % \end{figure}
+% \vspace{-1.6cm}
+% \rule{7cm}{.4pt}
+% \Large{Autor}
+
+
+% % \begin{figure}[H]
+% % \centering
+% % \includegraphics[scale=1]{Assinatura 2}
+% % \end{figure}
+% \vspace{-2.6cm}
+% \rule{7cm}{.4pt}
+% \Large{Orientador}
+% \end{center}
+% \end{multicols}
+
+% \addtolength{\topmargin}{-.875in}
+% \addtolength{\textheight}{1.75in}
+
+% Página da versão original ou corrigida
+\thispagestyle{empty}%\addtocounter{page}{-1}
+\begin{center}
+  Nome
+
+  \vspace{2cm}
+
+  \textbf{Título}
+
+  \vspace{2cm}
+
+  \textbf{Versão original}
+
+  \vspace{2cm}
+
+  \begin{flushright}
+    \begin{minipage}{.7\linewidth}
+      Dissertação apresentada ao Instituto de Astronomia, Geofísica e Ciências Atmosféricas da Universidade de São Paulo como requisito parcial para a obtenção do título de Doutor em \mbox{Ciências}.
+    \end{minipage}
+  \end{flushright}
+  \vspace{-0.5cm}
+  \begin{flushright}
+    \begin{minipage}{.7\linewidth}
+      Área de concentração: Astronomia extragalática.
+    \end{minipage}
+  \end{flushright}
+  \vspace{-0.7cm}
+  \begin{flushright}
+    \begin{minipage}{.7\linewidth}
+      Orientador: Nome do orientador.
+    \end{minipage}
+  \end{flushright}
+  \vfill
+
+  São Paulo\\
+  \the\year\\
+
+\end{center}
+
+\newpage
+\shipout\null %Comando para adicionar uma página em branco 
+
+\restoregeometry % restore the page layout as earlier
