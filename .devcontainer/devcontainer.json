@@ -76,7 +76,8 @@
 			},
 			"extensions": [
 				"James-Yu.latex-workshop",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"vsls-contrib.gitdoc",
 				// Remove the line below if you do not want Live-Collaboration Feature
 				//"ms-vsliveshare.vsliveshare",
 				// Uncomment the line below if you do not want LanguageTool Support
