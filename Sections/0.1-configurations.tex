@@ -2,7 +2,7 @@
 
 % Encoding and Language
 \usepackage[utf8]{inputenc}  % Input encoding, allows the use of UTF-8 characters
-\usepackage[english]{babel}  % Language support, here set to English
+\usepackage[portuguese]{babel}  % Language support, here set to English
 \usepackage[T1]{fontenc}     % Output font encoding, improves handling of special characters
 
 % Mathematics
@@ -17,7 +17,7 @@
 %\floatstyle{boxed}             % Option for boxed floats (currently commented out)
 \restylefloat{figure}           % Allows restyling of figure floats
 \usepackage{subcaption}         % Sub-figures within a single figure
-\usepackage[font={small,it}]{caption}  % Caption formatting, small and italic
+\usepackage[font={footnotesize,it}]{caption}  % Caption formatting, small and italic
 \usepackage{adjustbox}          % Adjust size and alignment of content (e.g., images)
 
 % Tables
@@ -42,7 +42,7 @@
 \usepackage[section]{placeins}  % Prevents floats from leaving their section
 
 % Layout and Geometry
-\usepackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=3cm]{geometry}  % Page margins
+\usepackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}  % Page margins
 \usepackage[space]{grffile}     % Allows spaces in graphic file names
 %\usepackage{showframe}         % Displays the layout frames (currently commented out)
 %\usepackage{fullpage}          % Use full page layout (currently commented out)
@@ -63,12 +63,9 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes, arrows.meta, positioning, shapes.geometric, fit}
 
-% To print code
-%\usepackage{pythonhighlight}    % Use with \begin{python} ... \end{python}
+\usepackage[indent=1.5cm]{parskip}
 
-% Custom Commands
-\DeclareMathOperator*{\aprox}{\approx}  % Custom operator for 'approximately equal'
-\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}  % Adjusts row spacing in tables
+% \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}  % Adjusts row spacing in tables
 
 % ------------------------------------------------------------------------------
 % Optional Packages
@@ -82,6 +79,24 @@
 % Line Numbers
 \usepackage{lineno}
 \linenumbers  % Enables line numbering, comment this line to remove them
+
+% ------------------------------------------------------------------------------
+% Define dynamic chapter titles based on language
+% ------------------------------------------------------------------------------
+\providecommand{\chapternameintro}{%
+  \iflanguage{portuguese}{Introdução}{Introduction}}
+\providecommand{\chapternamemethodology}{%
+  \iflanguage{portuguese}{Metodologia}{Methodology}}
+\providecommand{\chapternameresults}{%
+  \iflanguage{portuguese}{Resultados}{Results}}
+\providecommand{\chapternameconclusions}{%
+  \iflanguage{portuguese}{Conclusões}{Conclusions}}
+\providecommand{\chapternamefuture}{%
+  \iflanguage{portuguese}{Perspectivas futuras}{Future perspectives}}
+\providecommand{\chapternameacronyms}{%
+  \iflanguage{portuguese}{Lista de Acrônimos}{List of Acronyms}}
+\providecommand{\chapternameappendix}{%
+  \iflanguage{portuguese}{Apêndice}{Appendix}}
 
 % ------------------------------------------------------------------------------
 % Listing theme
@@ -192,8 +207,8 @@
 \titleformat{name=\chapter,numberless}[display]  % Format for unnumbered chapters
 {\bfseries\Huge}
 {\color{gray75}{\titlerule[0.8pt]}}
-{-7ex}
-{\bfseries\Huge}[\vspace{1ex}]
+{-8ex} % Should be -7ex if not using parskip
+{\bfseries\Huge}[]
 
 % Customizing how chapters, sections, and subsections are displayed
 \titleformat{\chapter}[hang]{\Huge\bfseries}  % Chapter format
@@ -210,10 +225,13 @@
 
 % Adjust spacing around titles
 % \titlespacing{command%plain}{left%l}{before-sep%l}{after-sep%l}
-\titlespacing{\chapter}{0pt}{0pt}{1.5cm}
+\titlespacing{\chapter}{0pt}{0pt}{1.0cm}
 \titlespacing{\section}{0pt}{1.0cm}{1.0cm}
 \titlespacing{\subsection}{0pt}{1.0cm}{1.0cm}
 \titlespacing{\subsubsection}{0pt}{1.0cm}{1.0cm}
+
+% Add numbering to subsubsections
+\setcounter{secnumdepth}{3}
 
 % ------------------------------------------------------------------------------
 % Background Image on First Page (uncomment if you want the USP symbol in
