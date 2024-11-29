@@ -37,20 +37,21 @@
 					"*.nlo", // Added Manually
 					"*.run.xml" // Added Manually
 				],
+				//// Latex Settings
 				// Edit the following property to change export directory
-				"latex-workshop.latex.outDir": "./PDF",
+				"latex-workshop.latex.outDir": "./Output",
 				"latex-workshop.latex.autoClean.run": "onBuilt",
 				"latex-workshop.latex.build.forceRecipeUsage": false,
 				"latex-workshop.synctex.afterBuild.enabled": true,
 				"latex-workshop.view.pdf.viewer": "tab",
 				"latex-workshop.latex.clean.subfolder.enabled": true,
 				"latex-workshop.latex.magic.args": [
-					"-output-directory=PDF", // to change the output directory
+					"-output-directory=Output", // to change the output directory
 					"%DOC%"
 				],
-				// Remove / comment the next 3 lines to remove dark view for pdf
-				//"latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewwer
-				"latex-workshop.latex.autoBuild.run": "never",
+				"latex-workshop.latex.autoBuild.run": "onSave",
+				"latex-workshop.latex.autoBuild.interval": 15000,
+				// Remove / comment the next 2 lines to remove dark view for pdf
 				//"latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
 				//"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", // For Dark Viewer
 				"editor.formatOnSave": true,
@@ -60,6 +61,8 @@
 				"grammarly.files.include": [
 					"**/*.tex"
 				],
+				
+				//// Other settings
 				// Remove the following to check .md files with Grammarly.
 				"grammarly.files.exclude": [
 					"**/*.md"

@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title page
+%\newgeometry{centering}    %%% make the page centered on paper
+\newgeometry{left=3.5cm, right=3.5cm, bottom=2cm}
+
+%\AddToShipoutPicture*{\BackgroundPic}
+\thispagestyle{empty}%\addtocounter{page}{-1}
+\begin{center}
+  \Large{
+    Universidade de São Paulo \\
+    Instituto de Astronomia, Geofísica e Ciências Atmosféricas \\
+    Departamento de Astronomia
+  }
+  
+  \vspace*{3cm}
+
+  \LARGE{Nome}
+
+  \vspace{3cm}
+
+  \begin{center}
+    \begin{huge}
+      \textbf{An [unofficial] IAG/USP template for dissertations and thesis}
+      %  \vskip 1em
+      %    {Relatório de Atividades}
+    \end{huge}
+  \end{center}
+
+  \vfill
+
+  \Large{
+    São Paulo \\
+    \the\year\\
+  }
+\end{center}
+
+\newpage
+\shipout\null %Comando para adicionar uma página em branco 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Signature page
+
+% \mbox{}
+% \null\vfill
+% \thispagestyle{empty}\addtocounter{page}{-1}
+
+% \begin{flushright}
+% \Large{São Paulo, \today}
+% \end{flushright}
+
+% \vspace{2cm}
+
+% \begin{multicols}{2}
+% \begin{center}
+
+% \begin{figure}[H]
+% \centering
+% \includegraphics[scale=.124]{Imagens/Ass.png}
+% \end{figure}
+% \vspace{-1.6cm}
+% \rule{7cm}{.4pt}
+% \Large{Autor}
+
+
+% \begin{figure}[H]
+% \centering
+% \includegraphics[scale=1]{Imagens/Ass1.jpg}
+% \end{figure}
+% \vspace{-2.6cm}
+% \rule{7cm}{.4pt}
+% \Large{Orientador}
+% \end{center}
+% \end{multicols}
+
+% \addtolength{\topmargin}{-.875in}
+% \addtolength{\textheight}{1.75in}
+
+% Original or corrected version page
+\thispagestyle{empty}%\addtocounter{page}{-1}
+\begin{center}
+  Nome
+
+  \vspace{3cm}
+
+  \textbf{An [unofficial] IAG/USP template for dissertations and thesis}
+
+  \vspace{3cm}
+
+  \textbf{Versão original}
+
+  \vspace{3cm}
+
+  \begin{flushright}
+    \begin{minipage}{.6\linewidth}
+      Dissertação/Tese apresentada ao Instituto de Astronomia, \mbox{Geofísica} e Ciências Atmosféricas da Universidade de São Paulo como requisito parcial para a obtenção do título de Mestre/Doutor em \mbox{Ciências}.
+      
+      \vspace{0.5cm}
+      
+      Área de concentração: Astronomia
+      \\
+      Orientador: Prof. Dr. Nome.
+    \end{minipage}
+  \end{flushright}
+  \vfill
+  
+  São Paulo\\
+  \the\year\\
+
+\end{center}
+
+\newpage
+\shipout\null % Add an empty page
+
+\restoregeometry % restore the page layout as earlier

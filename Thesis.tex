@@ -1,28 +1,61 @@
 \documentclass[a4paper,11pt,twoside,openright]{book}
 
-% Configurations for the TeX template
-\input{Sections/0-Configurations}
+% -------------------------------------------------------------------------
+% GENERAL NOTES
+% To compile this file, you need to have at least one citation and one defined acronym
+% Define one citation in 'Sections/reference_list.bib' and use any of the \cite commands anywhere in the text to avoid errors
+% Define one acronym in 'Sections/4.5-list_of_acronyms.tex' and use \an{defined-acronym} anywhere in the text to avoid errors
+% -------------------------------------------------------------------------
 
+% Configurations for the TeX template
+\input{Sections/0.1-configurations}
+
+% Defining acronyms
+\input{Sections/0.2-list_of_acronyms.tex}
+% To use acronyms, use \an{defined-acronym} in the text.
+
+% ----------------------------------------------------------------------------------------------------------------------
+% Defining custom commands
+\newcommand{\red}[1]{\textbf{\textcolor{red}{#1}}}  % Command for red text
+\newcommand{\hsp}{\hspace{15pt}}  % Command for horizontal space
+\renewcommand{\geq}{\geqslant}  % Redefine >= symbol
+\renewcommand{\leq}{\leqslant}  % Redefine <= symbol
+\newcommand{\ttt}[1]{\texttt{#1}} % Alias for \texttt
+\DeclareSIUnit{\angstrom}{\textup{\AA}} % Angstrom unit, to be used with the siunitx package
+\newcommand{\ionn}[2]{{\textrm{#1}}{\textrm{\sc #2}}} % Commando to print ions, for ex. [\ionn{O}{ii}]
+
+\newcommand{\review}[1]{\textbf{\textcolor{orange}{#1}}}
+
+% ----------------------------------------------------------------------------------------------------------------------
+% Document body
 \begin{document}
+%\pagevalues
 \onehalfspacing
 
-% Journal macros
-\input{Sections/Reference_macros}
+% Journal macros (for references)
+\input{Sections/0.3-reference_macros}
 
 \newpage
 
-\input{Sections/1-Cover_pages.tex}
-\input{Sections/2-Acknowledgements}
-\input{Sections/3-Abstract}
-\input{Sections/4-List_figures_tables}
+% Starting pages
+% Title page, signature page, 'original' or 'corrected' version page
+\input{Sections/0.4-cover_pages.tex}
+% Dedication/inspiring phrase page, acknowledgements page
+\input{Sections/0.5-acknowledgements}
+% Abstract pages
+\input{Sections/0.6-abstract}
+% Table of contents, list of figures, list of tables, list of acronyms
+\input{Sections/0.7-list_figures_tables}
 
 \newpage
 
-\input{Sections/5-Introduction}
-\input{Sections/6-Methodology}
-\input{Sections/7-Results}
-\input{Sections/8-Conclusions}
-\input{Sections/9-Bibliography}
-\input{Sections/10-Appendix}
+% Content pages
+\input{Sections/1-introduction}
+\input{Sections/2-methodology}
+\input{Sections/3-results}
+\input{Sections/4-conclusions}
+\input{Sections/5-future_perspectives.tex}
+\input{Sections/6-bibliography}
+\input{Sections/7-appendix}
 
 \end{document}

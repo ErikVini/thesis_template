@@ -1,0 +1,66 @@
+\setcounter{page}{0}
+\chapter{Introduction} \label{cha:introduction}
+  The goal of this document is to provide an unofficial dissertation/thesis template for IAG/USP.
+
+  \section{General tips for when writing a dissertation/thesis}
+
+  When writing the text, you should be aware of the IAG/USP norms\footnote{\url{https://leginf.usp.br/?resolucao=resolucao-copgr-no-7882-de-25-de-novembro-de-2019}}. There are obligatory chapters that should be in the text, they are:
+  \begin{itemize}
+    \item Cover
+    \item ``Folha de rosto''
+    \item List of figures, illustrations, tables
+    \item Introduction
+    \item Methodology
+    \item Results
+    \item Conclusions
+    \item Future perspectives
+    \item Bibliography
+    \item Appendices (optional)
+    \item Attachments (optional)
+  \end{itemize}
+
+  In order to make the deposit, you should have:
+  %
+  \begin{itemize}
+    \item For PhD: a printed copy of the text, the forms containing the committee suggestion, a letter from the supervisor saying that you are fit for the defense, and proof of one published paper, where you are the first or second co-author, in a refereed international journal. You also need to make a deposit in Janus.
+  \end{itemize}
+
+  IAG has a partnership with the IME's print shop. To print your dissertation/thesis with them you should send an email to \url{ccpastro iag.usp.br} with copy to \url{cida.coelho@iag.usp.br} asking for permission, with the PDF of the text attached. If approved, the text will be sent to the print shop and you will be notified when it is ready (within 1 or 2 days).
+
+  The forms for the committee and the supervisor manifestation can be found at IAG's website, in the ``Forms'' page: \url{https://www.iag.usp.br/pos-graduacao/formularios}. I recommend that you start thinking about the names that should be in your defense two weeks before making the deposit, and sending each member an email one week before, asking if they accept that their names be suggested.
+
+  \section{Features of this template}
+
+    This template is based on the \ttt{WebLatex}\footnote{\url{https://github.com/sanjib-sen/WebLaTex}} template, created to replace Overleaf using Github, with some modifications. See the link for further details and the advantages of this approach.
+  
+    \subsection{Acronyms}
+      The acronyms in this model are handled by the \ttt{acro} package, where you need to defined the acronyms beforehand, in the ``Sections/0.2-list\_of\_acronyms.tex'', using the format:
+
+      \begin{lstlisting}[autogobble]
+        \DeclareAcronym{acronym}{
+          short = short name,
+          long  = long name,
+          cite  = citation %optional
+        }
+    \end{lstlisting}
+
+    Using this package, the first reference to an acronym is written normally, with the reference if you defined the acronym with one, using the ``long'' name: \ac{splus}. Whenever you make another reference to this acronym, it will use the ``short'' name: \ac{splus}.
+    
+    You can also define acronyms using math-mode: \ac{photoz}. If you use the acronym only once, it will be printed using the long form only, without diplaying the short form, in this case, use can use the \ttt{ac\{acro\}} command followed by  \ttt{acuse\{acro\}}: \ac{specz}\acuse{specz}.
+
+    There are some variations on how the acronyms can be printed, such as:
+    \begin{itemize}
+      \item Plural: \ttt{\textbackslash acp\{photoz\}} $\rightarrow$ \acp{photoz}
+      \item Force long name: \ttt{\textbackslash acl\{des\}} $\rightarrow$ \acl{des}
+      \item Force short name: \ttt{\textbackslash acs\{vhs\}} $\rightarrow$ \acs{vhs}
+      \item Capital first letter: \ttt{\textbackslash Ac\{photoz\}} $\rightarrow$ \Ac{photoz}
+    \end{itemize}
+
+    \subsection{Citations}
+      In this template, the citations are handled by the \ttt{natbib} package, with is defined by the commands in the ``Sections/6-bibliography.tex'' file. There, the list of used references are imported from the ``Sections/reference\_list.bib'' file.
+
+      This package supports different types of citations, all of them explained here: \url{https://gking.harvard.edu/files/natnotes2.pdf}
+
+    \subsection{Examples of tables, figures, listings...}
+
+    \subsection{Making figures with \ttt{Matplotlib}}

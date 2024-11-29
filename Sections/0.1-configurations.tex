@@ -1,0 +1,294 @@
+% LTeX: enabled=false
+
+% Encoding and Language
+\usepackage[utf8]{inputenc}  % Input encoding, allows the use of UTF-8 characters
+\usepackage[english]{babel}  % Language support, here set to English
+\usepackage[T1]{fontenc}     % Output font encoding, improves handling of special characters
+
+% Mathematics
+\usepackage{amsmath, amssymb}   % Basic math symbols and environments
+\usepackage{dsfont}             % Double-struck fonts (e.g., for the indicator function)
+\usepackage{bm}                 % Bold math symbols
+\usepackage{mathrsfs}           % Additional math script fonts
+
+% Graphics and Figures
+\usepackage{graphicx}           % Include images and graphics
+\usepackage{float}              % Improved control over float placement
+%\floatstyle{boxed}             % Option for boxed floats (currently commented out)
+\restylefloat{figure}           % Allows restyling of figure floats
+\usepackage{subcaption}         % Sub-figures within a single figure
+\usepackage[font={small,it}]{caption}  % Caption formatting, small and italic
+\usepackage{adjustbox}          % Adjust size and alignment of content (e.g., images)
+
+% Tables
+% https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf
+\usepackage{booktabs}           % Professional-quality tables
+\usepackage{threeparttable}     % Tables with notes below them
+\usepackage{makecell}           % Customizable cell format in tables
+\usepackage{multicol, multirow} % Multi-column and multi-row cells in tables
+\usepackage[table]{xcolor}      % Color support in tables (and elsewhere)
+
+% Text Formatting and Styling
+\usepackage{color}              % Colored text
+\usepackage{url}                % Proper formatting of URLs
+\usepackage{fancyhdr}           % Custom headers and footers
+\usepackage[procnames]{listings} % Code listings with syntax highlighting
+\usepackage{lstautogobble}      % To remove empty lines at the end of listing envs
+\usepackage[onehalfspacing]{setspace}  % Line spacing adjustments (1.5 spacing here)
+\usepackage[nottoc]{tocbibind}  % Add bibliography/index to the Table of Contents
+
+% Float Management
+\usepackage{flafter}            % Prevents floats from appearing before their references
+\usepackage[section]{placeins}  % Prevents floats from leaving their section
+
+% Layout and Geometry
+\usepackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=3cm]{geometry}  % Page margins
+\usepackage[space]{grffile}     % Allows spaces in graphic file names
+%\usepackage{showframe}         % Displays the layout frames (currently commented out)
+%\usepackage{fullpage}          % Use full page layout (currently commented out)
+%\usepackage{comment}           % Allows commenting out large sections of text
+
+% Special Features
+\usepackage{eso-pic}            % Add background picture to pages (e.g., title page)
+\usepackage{natbib}             % Bibliography and citations with NatBib
+\usepackage{acro}               % Enables the definition and management of acronyms
+\usepackage{tcolorbox}          % For bounding boxes
+\usepackage{siunitx}            % Physical units
+%\usepackage[printonlyused, withpage]{acronym} % Enables the definition and management of acronyms (another way)
+%\usepackage{icomma}            % Adjust spacing after commas in math mode (currently commented out)
+%\usepackage{array}             % Advanced table options (currently commented out)
+%\setlength{\extrarowheight}{.5ex}  % Extra row height for tables (use with array package)
+%\usepackage[outline]{contour}  % Outlined text (currently commented out)
+\usepackage{layouts} 
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows.meta, positioning, shapes.geometric, fit}
+
+% To print code
+%\usepackage{pythonhighlight}    % Use with \begin{python} ... \end{python}
+
+% Custom Commands
+\DeclareMathOperator*{\aprox}{\approx}  % Custom operator for 'approximately equal'
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}  % Adjusts row spacing in tables
+
+% ------------------------------------------------------------------------------
+% Optional Packages
+% ------------------------------------------------------------------------------
+% Uncomment if you want to use these features
+
+% Minted: Code listings with syntax highlighting
+%\usepackage{minted}
+%\usemintedstyle{pastie}  % Pastie style for minted code blocks
+
+% Line Numbers
+\usepackage{lineno}
+\linenumbers  % Enables line numbering, comment this line to remove them
+
+% ------------------------------------------------------------------------------
+% Listing theme
+% ------------------------------------------------------------------------------
+% https://tex.stackexchange.com/questions/235731/listings-syntax-for-literate
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.97}
+ 
+\lstdefinestyle{mystyle}{
+    morekeywords={access,and,break,class,continue,def,del,elif,else,except,exec,
+    finally,for,from,global,if,import,in,is,lambda,not,or,pass,print,raise,
+    return,self,try,while},
+    morekeywords=[2]{abs,all,any,basestring,bin,bool,bytearray,callable,chr,
+    classmethod,cmp,compile,complex,delattr,dict,dir,divmod,enumerate,eval,
+    execfile,file,filter,float,format,frozenset,getattr,globals,hasattr,hash,
+    help,hex,id,input,int,isinstance,issubclass,iter,len,list,locals,long,map,
+    max,memoryview,min,next,object,oct,open,ord,pow,property,range,raw_input,
+    reduce,reload,repr,reversed,round,set,setattr,slice,sorted,staticmethod,str,
+    sum,super,tuple,type,unichr,unicode,vars,xrange,zip,apply,buffer,coerce,
+    intern},
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\scriptsize\ttfamily,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=10pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    frame=single,
+    frameround={t}{t}{t}{t},
+    framexleftmargin=6mm,
+    xleftmargin=20pt,
+    xrightmargin=3pt
+    }
+\lstset{style=mystyle}
+
+% ------------------------------------------------------------------------------
+% Custom Page Elements and Layout Adjustments
+% ------------------------------------------------------------------------------
+
+% Create a new environment that defines a right-aligned box
+\newenvironment{rightbox}[1]
+ {\itemize[
+    nosep,
+    leftmargin=\dimexpr\textwidth-#1\relax,
+    rightmargin=0pt,
+    itemindent=\parindent,
+    listparindent=\parindent,
+  ]\item[]\relax}
+ {\enditemize}
+
+% Command to create a blank page
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage
+}
+
+% Fancy Header Configuration
+\fancyhead{}  % Clear default header
+\fancyfoot{}  % Clear default footer
+\fancyhead[RO,LE]{\thepage}  % Page number on the right for odd pages and left for even pages
+\fancyhead[CE]{\nouppercase\leftmark}  % Section title centered on even pages
+\fancyhead[CO]{\nouppercase\rightmark} % Chapter title centered on odd pages
+\pagestyle{fancy}  % Apply fancyhdr configuration
+
+% Customization of section marks in headers
+\renewcommand{\sectionmark}[1]{%
+    \markright{\scriptsize{\slshape{\fontsize{10}{12} \selectfont Section \thesection.\ #1}}}
+}
+\renewcommand{\headrulewidth}{0.7pt}  % Line width for header rule
+\setlength{\headheight}{14pt}  % Adjust header height
+
+% ------------------------------------------------------------------------------
+% Custom Commands for Color
+% ------------------------------------------------------------------------------
+
+\definecolor{lightgray}{gray}{0.7}  % Define light gray color
+\definecolor{gray75}{gray}{0.75}  % Define 75% gray color
+
+% ------------------------------------------------------------------------------
+% Page Layout and Section Formatting
+% ------------------------------------------------------------------------------
+
+\usepackage{emptypage}  % Suppresses page numbers on empty pages
+\usepackage{titlesec, blindtext}  % Customization of section titles
+
+% Customization of the Table of Contents
+\renewcommand\contentsname{Table of Contents}
+\titleformat{\chapter}[display]  % Format for chapters with number
+{\bfseries\Huge}
+{{\chaptertitlename} \large\thechapter}
+{2ex}
+{\titlerule\vspace{2ex}}
+
+\titleformat{name=\chapter,numberless}[display]  % Format for unnumbered chapters
+{\bfseries\Huge}
+{\color{gray75}{\titlerule[0.8pt]}}
+{-7ex}
+{\bfseries\Huge}[\vspace{1ex}]
+
+% Customizing how chapters, sections, and subsections are displayed
+\titleformat{\chapter}[hang]{\Huge\bfseries}  % Chapter format
+{\thechapter\hsp\textcolor{gray75}{}\hsp}{0pt}{\Huge\bfseries}
+[\color{gray75}{\titlerule[.8pt]}]
+
+\titleformat{\section}[hang]{\LARGE\bfseries}  % Section format
+{\thesection\hspace{19pt}\textcolor{gray75}{|}\hspace{14pt}}{0pt}{\LARGE\bfseries}
+[]
+
+\titleformat{\subsection}[hang]{\Large\bfseries}  % Subsection format
+{\makebox[1cm]{\thesubsection}\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries}
+[]
+
+% Adjust spacing around titles
+% \titlespacing{command%plain}{left%l}{before-sep%l}{after-sep%l}
+\titlespacing{\chapter}{0pt}{0pt}{1.5cm}
+\titlespacing{\section}{0pt}{1.0cm}{1.0cm}
+\titlespacing{\subsection}{0pt}{1.0cm}{1.0cm}
+\titlespacing{\subsubsection}{0pt}{1.0cm}{1.0cm}
+
+% ------------------------------------------------------------------------------
+% Background Image on First Page (uncomment if you want the USP symbol in
+% the first page)
+% ------------------------------------------------------------------------------
+
+% \newcommand\BackgroundPic{%
+%     \put(0,0){%
+%         \parbox[b][\paperheight]{\paperwidth}{%
+%             \vfill
+%             \centering
+%             \includegraphics[width=.9\paperwidth,height=.9\paperheight,%
+%                 keepaspectratio]{Images/brasao_usp_pb_c}%
+%             \vfill
+%         }}
+% }
+
+% ------------------------------------------------------------------------------
+% Acronym Management
+% ------------------------------------------------------------------------------
+
+\acsetup{
+  single         = true,
+  list/sort      = true,
+  cite/display   = first,
+  cite/group     = true,
+  cite/cmd       = \citep,
+  cite/group/cmd = \citealp
+}
+
+% Reset acronyms each chapter (so LaTeX shows the long name again)
+\preto\chapter\acresetall
+
+% ------------------------------------------------------------------------------
+% Hyperlinks and References
+% ------------------------------------------------------------------------------
+
+\usepackage{hyperref}  % Should be loaded last
+\hypersetup{
+    colorlinks,
+    linkcolor=blue,
+    anchorcolor=blue,
+    citecolor=blue,
+    filecolor=blue,
+    menucolor=blue,
+    runcolor=blue,
+    urlcolor=blue,
+}
+
+% ------------------------------------------------------------------------------
+% Additional Customizations
+% ------------------------------------------------------------------------------
+
+% ABNT style for itemized lists using a dash
+\def\labelitemi{\normalfont\bfseries \textendash}  
+
+% Adjust float placement separation
+\makeatletter
+\setlength{\@fpsep}{1cm}  % Adjust value as needed
+\makeatother
+
+% Ensure subsections behave correctly
+\makeatletter
+\AtBeginDocument{%
+    \expandafter\renewcommand\expandafter\subsection\expandafter{%
+        \expandafter\@fb@secFB\subsection
+    }%
+}
+\makeatother
+
+% Custom command to manually number equations
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+% Adjust fraction of text on a page
+\def\textfraction{0.1}
+
+% Set the path for images
+\graphicspath{{Images/}}

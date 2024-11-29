@@ -1,0 +1,7 @@
+# Ignore the files in the Output folder, except for the .pdf, .synce and .synctex.gz, .bbl, and .log files
+Output/*
+!Output/*.pdf
+!Output/*.synctex.gz
+!Output/*.bbl
+
+.vscode
