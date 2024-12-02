@@ -63,7 +63,7 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes, arrows.meta, positioning, shapes.geometric, fit}
 
-\usepackage[indent=1.5cm]{parskip}
+\usepackage[indent=1.5cm]{parskip} % 1.5cm identation, following ABNT rules
 
 % \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}  % Adjusts row spacing in tables
 
@@ -97,6 +97,25 @@
   \iflanguage{portuguese}{Lista de Acrônimos}{List of Acronyms}}
 \providecommand{\chapternameappendix}{%
   \iflanguage{portuguese}{Apêndice}{Appendix}}
+
+% ------------------------------------------------------------------------------
+% Defining alerts, Github Markdown style
+% ------------------------------------------------------------------------------
+% Note
+\newtcolorbox{note}[1][]{colback=blue!5!white, colframe=blue!75!black, title=Note, fonttitle=\bfseries, #1}
+
+% Tip
+\newtcolorbox{tip}[1][]{colback=green!5!white, colframe=green!75!black, title=Tip, fonttitle=\bfseries, #1}
+
+% Important
+\newtcolorbox{important}[1][]{colback=purple!5!white, colframe=purple!75!black, title=Important, fonttitle=\bfseries, #1}
+
+% Warning
+\newtcolorbox{warning}[1][]{colback=yellow!5!white, colframe=yellow!75!black, title=Warning, fonttitle=\bfseries, #1}
+
+% Caution
+\newtcolorbox{caution}[1][]{colback=red!5!white, colframe=red!75!black, title=Caution, fonttitle=\bfseries, #1}
+
 
 % ------------------------------------------------------------------------------
 % Listing theme
