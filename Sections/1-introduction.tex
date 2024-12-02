@@ -148,13 +148,13 @@
           \end{tabular}
         \end{table}
 
-        Você também pode criar células que abrangem várias colunas ou linhas:
+        Você também pode criar células que abrangem várias colunas ou linhas usando o comando \ttt{\textbackslash multirow\{número de linhas\}\{tamanho (ou * para automático)\}\{Texto\}}:
         %
         \begin{table}[h]
           \centering
           \caption{Exemplo de tabela.}
           \label{tab:ex_4}
-          \begin{tabular}{@{}p{5cm}lc@{}}
+          \begin{tabular}{@{}ccc@{}}
             \toprule
             \textbf{Coluna 1}             & \textbf{Coluna 2} & \textbf{Coluna 3} \\ \midrule
             \multirow{2}{*}{Célula 1 e 4} & \multicolumn{2}{c}{Células 2 e 3}     \\ 
