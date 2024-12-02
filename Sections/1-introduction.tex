@@ -183,10 +183,46 @@
               \item[c] Célula 3.
             \end{tablenotes}
           \end{threeparttable}
-
         \end{table}
 
       \subsubsection{Listings (códigos)}
+        Para colocar códigos no texto, este template usa o pacote \ttt{listings} que, apesar de não ser tão completo quanto o \ttt{minted}, não usa o \ttt{Python} como requisito. Um exemplo de código geral foi dado acima, na forma de definir acrônimos:
+        %
+        \begin{lstlisting}[autogobble]
+          \DeclareAcronym{acronym}{
+            short = short name,
+            long  = long name,
+            cite  = citation %optional
+          }
+        \end{lstlisting}
+
+        Porém você pode definir estilos (configurados no arquivo ``Sections/0.1-configurations.tex''). O estilo para Python já está definido:
+        %
+        \begin{lstlisting}[label=code:bnn_layer, language=Python, numbers=left]
+          class Nome():
+          """
+          Exemplo de classe para o template
+      
+          Args:
+            ...
+      
+          Attributes:
+            ...
+      
+          Methods:
+            ...
+      
+          Returns:
+            ...
+          """
+      
+          def __init__(self, in_features, out_features):
+              super().__init__()
+              self.in_features = in_features
+              self.out_features = out_features
+
+          ...
+        \end{lstlisting}
 
       \subsubsection{Equações}
 
