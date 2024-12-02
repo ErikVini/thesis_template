@@ -328,7 +328,7 @@
               # Constrained layout
               "figure.constrained_layout.use": True, # When this in True, do not use tight_layout
           }
-          
+
           plt.rcParams.update(thesis_settings)
         \end{lstlisting}
 
@@ -338,7 +338,21 @@
           ...
         \end{lstlisting}
 
-        As outras opções e mais detalhes deste código estão descritas no link acima.
+        As outras opções e mais detalhes deste código estão descritas no link acima. Dois exemplos de imagens geradas com essa função estão nas Figuras \ref{fig:matplot_1} e \ref{fig:matplot_2}.
+        %
+        \begin{figure}
+          \centering
+          \includegraphics{exemplo_matplot.pdf}
+          \caption{Exemplo de figura feita usando a função \ttt{set\_size}.}
+          \label{fig:matplot_1}
+        \end{figure}
+        %
+        \begin{figure}
+          \centering
+          \includegraphics{exemplo_matplot_2.pdf}
+          \caption{Outro xemplo de figura feita usando a função \ttt{set\_size}.}
+          \label{fig:matplot_2}
+        \end{figure}
 
       %     In this template, the citations are handled by the \ttt{natbib} package, with is defined by the commands in the ``Sections/6-bibliography.tex'' file. There, the list of used references are imported from the ``Sections/reference\_list.bib'' file.
 
