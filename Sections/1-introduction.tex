@@ -122,7 +122,7 @@
         %
         \begin{table}[h]
           \centering
-          \caption{Exemplo de tabela.}
+          \caption{Exemplo de tabela sem as margens.}
           \label{tab:ex_2}
           \begin{tabular}{@{}ccc@{}}
             \toprule
@@ -137,7 +137,7 @@
         %
         \begin{table}[h]
           \centering
-          \caption{Exemplo de tabela.}
+          \caption{Exemplo de tabela com tamanho fixo.}
           \label{tab:ex_3}
           \begin{tabular}{@{}lrp{5cm}@{}}
             \toprule
@@ -152,7 +152,7 @@
         %
         \begin{table}[h]
           \centering
-          \caption{Exemplo de tabela.}
+          \caption{Exemplo de tabela com multirows e multicolumns.}
           \label{tab:ex_4}
           \begin{tabular}{@{}ccc@{}}
             \toprule
@@ -161,6 +161,27 @@
                                           & Célula 5          & Célula 6          \\ 
             \bottomrule
           \end{tabular}
+        \end{table}
+
+        O template também inclui o pacote \ttt{threeparttable}, que permite colocar notas de rodapé em tabelas:
+        %
+        \begin{table}[h]
+          \centering
+          \caption{Exemplo de tabela com multirows e multicolumns.}
+          \label{tab:ex_4}
+          \begin{threeparttable}
+            \begin{tabular}{@{}ccc@{}}
+              \toprule
+              \textbf{Coluna 1}                      & \textbf{Coluna 2} & \textbf{Coluna 3}      \\ \midrule
+              \multirow{2}{*}{Célula 1 e 4}\tnote{a} & \multicolumn{2}{c}{Células 2 e 3}\tnote{b} \\ 
+                                                     & Célula 5          & Célula 6               \\ 
+              \bottomrule
+            \end{tabular}
+            \begin{tablenotes}
+              \item[a] Células em mais de uma linha.; \item[b] Células em mais que uma coluna.
+            \end{tablenotes}
+          \end{threeparttable}
+
         \end{table}
 
       \subsubsection{Listings (códigos)}
