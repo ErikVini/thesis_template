@@ -116,6 +116,18 @@
           \end{tabular}
         \end{table}
 
+        Caso queira tirar as ``sobras'' à esquerda e à direita, é só incluir um ``@\{\}'' antes e depois da configuração das colunas:
+        \begin{table}[h]
+          \centering
+          \begin{tabular}{@{}ccc@{}}
+            \toprule
+            \textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} \\ \midrule
+            Célula 1          & Célula 2          & Célula 3          \\ 
+            Célula 4          & Célula 5          & Célula 6          \\ 
+            \bottomrule
+          \end{tabular}
+        \end{table}
+
 
       \subsubsection{Listings (códigos)}
 
