@@ -62,19 +62,16 @@
 
       Você também pode incluir texto usando o math-mode (\ttt{\textbackslash ac\{photoz\}}) \ac{photoz}. Você também pode usar o acrônimo no plural (\ttt{\textbackslash acp\{photoz\}}) \acp{photoz}, forçar o modo curto (\ttt{\textbackslash acs\{specz\}}) \acs{specz} ou longo (\ttt{\textbackslash acl\{specz\}}) \acl{specz}. Há também a possibilidade de colocar a primeira letra em maiúsculo (\ttt{\textbackslash Ac\{specz\}}) \Ac{specz}.
 
-  %   Using this package, the first reference to an acronym is written normally, with the reference if you defined the acronym with one, using the ``long'' name: \ac{splus}. Whenever you make another reference to this acronym, it will use the ``short'' name: \ac{splus}.
-    
-  %   You can also define acronyms using math-mode: \ac{photoz}. If you use the acronym only once, it will be printed using the long form only, without diplaying the short form, in this case, use can use the \ttt{\textbackslash ac\{acro\}} command followed by  \ttt{\textbackslash acuse\{acro\}}: \ac{specz}\acuse{specz}.
-
-  %   There are some variations on how the acronyms can be printed, such as:
-  %   \begin{itemize}
-  %     \item Plural: \ttt{\textbackslash acp\{photoz\}} $\rightarrow$ \acp{photoz}
-  %     \item Force long name: \ttt{\textbackslash acl\{des\}} $\rightarrow$ \acl{des}
-  %     \item Force short name: \ttt{\textbackslash acs\{vhs\}} $\rightarrow$ \acs{vhs}
-  %     \item Capital first letter: \ttt{\textbackslash Ac\{photoz\}} $\rightarrow$ \Ac{photoz}
-  %   \end{itemize}
-
     \subsection{Citações}
+      As citações são gerenciadas com o pacote \ttt{natbib}, e definidas no arquivo ``Sections/6-bibliography.tex'', no qual a lista com referências usadas é importada do arquivo ``Sections/reference\_list.bib''. 
+
+      Este pacote suporta diferentes tipos de citações, todas descritas em detalhes aqui: \url{https://gking.harvard.edu/files/natnotes2.pdf}.
+
+      Uma dica adicional para deixar o seu arquivo de referências bem organizado e bonito é usar o Bibtex Tidy (\url{https://flamingtempura.github.io/bibtex-tidy/index.html}), que alinha, ordena e arruma as citações.
+
+      %     In this template, the citations are handled by the \ttt{natbib} package, with is defined by the commands in the ``Sections/6-bibliography.tex'' file. There, the list of used references are imported from the ``Sections/reference\_list.bib'' file.
+
+  %     This package supports different types of citations, all of them explained here: \url{https://gking.harvard.edu/files/natnotes2.pdf}
 
 
   % The goal of this document is to provide an unofficial dissertation/thesis template for IAG/USP.
