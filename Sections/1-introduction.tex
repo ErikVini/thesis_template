@@ -73,15 +73,33 @@
       Colocarei aqui alguns exemplos de imagens, tabelas, listings, equações e etc para facilitar a escrita do seu trabalho.
 
       \subsubsection{Imagens}
-      Uma imagem centralizada no texto:
+      Uma imagem centralizada no texto (Figura \ref{fig:ex_1col}):
       %
       \begin{figure}
         \centering
-        \includegraphics[width=0.5\linewidth]{example-image-b}
+        \includegraphics[width=0.5\linewidth]{example-image-a}
         \caption{Exemplo de imagem em uma coluna.}
         \label{fig:ex_1col}
       \end{figure}
 
+      Duas imagens centralidas no texto:
+      \begin{figure}
+        \centering
+        \begin{subfigure}{.5\textwidth}
+          \centering
+          \includegraphics[width=.4\linewidth]{example-image-a}
+          \caption{A subfigure}
+          \label{fig:sub1}
+        \end{subfigure}%
+        \begin{subfigure}{.5\textwidth}
+          \centering
+          \includegraphics[width=.4\linewidth]{example-image-b}
+          \caption{A subfigure}
+          \label{fig:sub2}
+        \end{subfigure}
+        \caption{A figure with two subfigures}
+        \label{fig:test}
+      \end{figure}
       
       \subsubsection{Tabelas}
 
