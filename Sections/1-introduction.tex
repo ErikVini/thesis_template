@@ -128,6 +128,17 @@
           \end{tabular}
         \end{table}
 
+        Outras opções para as colunas são \ttt{c} para centralizado, \ttt{l} para alinhado à esquerda, \ttt{r} para alinhado à direita, e \ttt{p\{X\}} para ter uma célula com tamanho fixo X (que pode ser dado em cm):
+        \begin{table}[h]
+          \centering
+          \begin{tabular}{@{}lrp{5cm}@{}}
+            \toprule
+            \textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} \\ \midrule
+            Célula 1          & Célula 2          & Célula 3          \\ 
+            Célula 4          & Célula 5          & Célula 6          \\ 
+            \bottomrule
+          \end{tabular}
+        \end{table}
 
       \subsubsection{Listings (códigos)}
 
