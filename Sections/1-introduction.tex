@@ -105,7 +105,7 @@
       \subsubsection{Tabelas}
         Este template usa o pacote \ttt{booktabs}, que permite fazer tabelas mais bonitas. Repare no uso do ``toprule'', ``midrule'', e ``bottomrule'':
         %
-        \begin{table}[h]
+        \begin{table}[h!]
           \centering
           \caption{Exemplo de tabela.}
           \label{tab:ex_1}
@@ -120,7 +120,7 @@
 
         Caso queira tirar as ``sobras'' à esquerda e à direita, é só incluir um ``@\{\}'' antes e depois da configuração das colunas:
         %
-        \begin{table}[h]
+        \begin{table}[h!]
           \centering
           \caption{Exemplo de tabela sem as margens.}
           \label{tab:ex_2}
@@ -135,7 +135,7 @@
 
         Outras opções para as colunas são \ttt{c} para centralizado, \ttt{l} para alinhado à esquerda, \ttt{r} para alinhado à direita, e \ttt{p\{X\}} para ter uma célula com tamanho fixo X (que pode ser dado em cm):
         %
-        \begin{table}[h]
+        \begin{table}[h!]
           \centering
           \caption{Exemplo de tabela com tamanho fixo.}
           \label{tab:ex_3}
@@ -150,7 +150,7 @@
 
         Você também pode criar células que abrangem várias linhas ou colunas usando os comandos \ttt{\textbackslash multirow\{número de linhas\}\{tamanho (ou * para automático)\}\{Texto\}} e \ttt{\textbackslash multicolumn\{número de colunas\}\{alinhamento (l, r, caption)\}\{Texto\}}:
         %
-        \begin{table}[h]
+        \begin{table}[h!]
           \centering
           \caption{Exemplo de tabela com multirows e multicolumns.}
           \label{tab:ex_4}
@@ -165,7 +165,7 @@
 
         O template também inclui o pacote \ttt{threeparttable}, que permite colocar notas de rodapé em tabelas:
         %
-        \begin{table}[h]
+        \begin{table}[h!]
           \centering
           \caption{Exemplo de tabela usando o \ttt{threeparttable}.}
           \label{tab:ex_5}
