@@ -82,7 +82,7 @@
         \label{fig:ex_1col}
       \end{figure}
 
-      Duas imagens centralizadas no texto (Figura \ref{fig:sub_1} e \ref{fig:sub_2}, partes da Figura \ref{fig:ex_2cols}):
+      Duas imagens centralizadas no texto (Figura \ref{fig:sub_1} e \ref{fig:sub_2}, partes da Figura \ref{fig:ex_2cols}). Você pode fazer como neste exemplo, mas eu recomendo que faça isso direto no \ttt{Python} e coloque no \LaTeX{} como uma imagem só:
       %
       \begin{figure}[h]
         \centering
@@ -103,6 +103,19 @@
       \end{figure}
       
       \subsubsection{Tabelas}
+        Este template usa o pacote \ttt{booktabs}, que permite fazer tabelas mais bonitas:
+        %
+        \begin{table}
+          \centering
+          \begin{tabular}{ccc}
+            \toprule
+            \textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} \\ \midrule
+            Célula 1          & Célula 2          & Célula 3          \\ 
+            Célula 4          & Célula 5          & Célula 6          \\ 
+            \bottomrule
+          \end{tabular}
+        \end{table}
+
 
       \subsubsection{Listings (códigos)}
 
