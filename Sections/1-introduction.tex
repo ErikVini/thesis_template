@@ -107,6 +107,8 @@
         %
         \begin{table}[h]
           \centering
+          \caption{Exemplo de tabela.}
+          \label{tab:ex_1}
           \begin{tabular}{ccc}
             \toprule
             \textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} \\ \midrule
@@ -119,6 +121,8 @@
         Caso queira tirar as ``sobras'' à esquerda e à direita, é só incluir um ``@\{\}'' antes e depois da configuração das colunas:
         \begin{table}[h]
           \centering
+          \caption{Exemplo de tabela.}
+          \label{tab:ex_2}
           \begin{tabular}{@{}ccc@{}}
             \toprule
             \textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} \\ \midrule
@@ -131,6 +135,8 @@
         Outras opções para as colunas são \ttt{c} para centralizado, \ttt{l} para alinhado à esquerda, \ttt{r} para alinhado à direita, e \ttt{p\{X\}} para ter uma célula com tamanho fixo X (que pode ser dado em cm):
         \begin{table}[h]
           \centering
+          \caption{Exemplo de tabela.}
+          \label{tab:ex_3}
           \begin{tabular}{@{}lrp{5cm}@{}}
             \toprule
             \textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} \\ \midrule
