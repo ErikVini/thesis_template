@@ -101,6 +101,8 @@
         \caption{Uma imagem contendo duas subfiguras}
         \label{fig:ex_2cols}
       \end{figure}
+
+      Para não numerar as figuras, é só colocar um asterisco no final do nome do ambiente (figure $\rightarrow$ figure*).
       
       \subsubsection{Tabelas}
         Este template usa o pacote \ttt{booktabs}, que permite fazer tabelas mais bonitas. Repare no uso do ``toprule'', ``midrule'', e ``bottomrule'':
@@ -185,6 +187,8 @@
           \end{threeparttable}
         \end{table}
 
+        Para não numerar as tabelas, é só colocar um asterisco no final do nome do ambiente (table $\rightarrow$ table*).
+
       \subsubsection{Listings (códigos)}
         Para colocar códigos no texto, este template usa o pacote \ttt{listings} que, apesar de não ser tão completo quanto o \ttt{minted}, não usa o \ttt{Python} como requisito. Um exemplo de código geral foi dado acima, na forma de definir acrônimos:
         %
@@ -224,7 +228,7 @@
           ...
         \end{lstlisting}
 
-        Nos dois casos, o parâmetro ``autogobble'' serve para tirar espaços em branco extras
+        Nos dois casos, o parâmetro ``autogobble'' serve para tirar espaços em branco extras. Não há como deixar o código sem numeração.
 
       \subsubsection{Equações}
         Equação simples, como a Equação \eqref{eq:drake}:
@@ -252,6 +256,8 @@
           \end{cases}
           \label{eq:cases}
         \end{align}
+
+        Para não numerar as equações, é só colocar um asterisco no final do nome do ambiente (equation ou align $\rightarrow$ equation* ou align*).
 
       %     In this template, the citations are handled by the \ttt{natbib} package, with is defined by the commands in the ``Sections/6-bibliography.tex'' file. There, the list of used references are imported from the ``Sections/reference\_list.bib'' file.
 
