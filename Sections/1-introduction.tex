@@ -234,11 +234,22 @@
           \label{eq:drake}
         \end{equation}
 
-        Também é possível criar equações de várias linhas, com alinhamento:
+        Também é possível criar equações de várias linhas, com alinhamento (Equação \eqref{eq:aligned}):
         %
         \begin{align}
           y &= a \cdot x + b, \\
           k &= a \cdot x^2 + b \cdot x + c
+          \label{eq:aligned}
+        \end{align}
+
+        E, por último, criar ``cases'':
+        %
+        \begin{align}
+          x = \\
+          \begin{cases}
+            y,\text{ se } a > 0
+            z,\text{ se } a \leq 0
+          \end{cases}
         \end{align}
 
       %     In this template, the citations are handled by the \ttt{natbib} package, with is defined by the commands in the ``Sections/6-bibliography.tex'' file. There, the list of used references are imported from the ``Sections/reference\_list.bib'' file.
