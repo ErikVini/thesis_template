@@ -96,6 +96,8 @@
 				// "valentjn.vscode-ltex",
 				// Uncomment the following line if you want to enable Grammarly integration.
 				// "znck.grammarly"
+				// Auto commit/push
+				"vsls-contrib.gitdoc"
 			]
 		}
 	}
