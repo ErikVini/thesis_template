@@ -1,6 +1,6 @@
 {
 	// Container name for the development environment.
-	"name": "custom_weblatex",
+	"name": "iag_unofficial_thesis",
 	// Docker image to be used for the development container (latest full TeXLive).
 	"image": "texlive/texlive:latest-full", // Official TeXLive Docker image, customized for WebLaTeX.
 	// The user to be used in the container. Root is specified, do not change this.
@@ -82,7 +82,11 @@
 						"language": "latex", // Specify the language as LaTeX.
 						"scheme": "file" // Use the file scheme for language detection.
 					}
-				]
+				],
+				// GitDoc configurations
+				"gitdoc.autoCommitDelay": 60000, // Automatically commit changes after 1 minute.
+				"gitdoc.autoPullDelay": 60000, // Automatically pull changes after 1 minute.
+				"gitdoc.autoPushDelay": 60000 // Automatically push changes after 1 minute.
 			},
 			// Extensions to be installed in VS Code within the dev container.
 			"extensions": [
@@ -96,7 +100,9 @@
 				// "valentjn.vscode-ltex",
 				// Uncomment the following line if you want to enable Grammarly integration.
 				// "znck.grammarly"
-				// Auto commit/push
+				// Git History for viewing Git history within VS Code.
+				"donjayamanne.githistory",
+				// GitDoc for automatically doing commits
 				"vsls-contrib.gitdoc"
 			]
 		}

@@ -1,7 +1,30 @@
-# Ignore the files in the Output folder, except for the .pdf, .synce and .synctex.gz, .bbl, and .log files
-Output/*
-!Output/*.pdf
-!Output/*.synctex.gz
-!Output/*.bbl
+# Ignore
+# All folders and files starting with _
+_*
 
+# The VScode configuration folder
 .vscode
+
+# Subproducts of latex compilation
+*.aux
+*.bbl
+*.blg
+*.idx
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.fdb_latexmk
+*.snm
+*.synctex(busy)
+*.synctex.gz(busy)
+*.nav
+*.vr
