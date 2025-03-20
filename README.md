@@ -19,6 +19,8 @@ Este é o caminho que eu recomendo, pois você não fica limitado às horas que 
 
 Com a pasta escolhida, o VSCode irá baixar o repositório para o seu computador e, como existe um arquivo devcontainer.json, ele perguntará se você quer reabrir o documento com o container. Diga sim e ele fará a instalação do Latex, deixando tudo pronto para você usar. Como isso tudo acontece dentro do container, não são feitas modificações no seu computador, então não precisa se preocupar com incompatibilidades!
 
+Caso você não tenha uma opção de clonar o repositório ou o VSCode não te perguntar sobre reabrir o documento com o container, baixe as extensões "Git" e "Docker".
+
 # Mudando as configurações padrão do template
 Se você abriu o repositório usando o Github, você tem a opção de alterar algumas configurações, que estão no arquivo '.devcontainer/devcontainer.json'. Toda vez que você fizer uma modificação e salvar o arquivo, o VSCode irá perguntar se você quer reconstruir o container, diga "sim" e as mudanças serão aplicadas. As configurações estão comentadas dentro do arquivo, então fica mais fácil você fazer suas modificações se achar necessário.
 
