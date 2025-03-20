@@ -11,8 +11,12 @@ Você pode usar este template através do GitHub e VSCode ou pelo Overleaf mesmo
 
 Caso você queira usar o Github, o primeiro passo é clonar o repositório para a sua conta. Para fazer isso você deve clicar em "Use this template" no canto superior direito e depois ir em "Create a new repository". Lembre-se de deixar o repositório privado! Depois disso é só escolher se você quer deixar no próprio GitHub ou baixar para o seu computador.
 
+<div align="center"> <img src=".readmeimages/github_clone.png"> </div>
+
 ## Usando Codespaces no Github
 Nesse caso você estaria usando uma máquina virtual do Github, tendo um limite de horas de uso (180 horas por mês). Para usar esse template com Codespaces é simples, basta ir no botão "Code" no canto superior direito, depois ir na aba "Codespaces" e, então, selecionar "Create codespace on main". Ele criará a máquina virtual e abrirá um editor online do VSCode. A primeira vez que você faz esse processo é um pouco demorado pois o Latex está sendo instalado, mas isso ocorre apenas na primeira abertura.
+
+<div align="center"> <img src=".readmeimages/github_codespaces.png"> </div>
 
 ## Baixando o repositório no seu computador
 Este é o caminho que eu recomendo, pois você não fica limitado às horas que o Github dá. Nesse caso você precisa instalar o [VSCode](https://code.visualstudio.com/). Com o editor instalado, você deve usar a opção "Clone Github repository", que aparece na página de boas vindas. Feito isso, selecione o repositório para o qual você clonou este template e depois escolha a pasta de destino (onde o seu repositório ficará salvo no seu computador).
