@@ -1,6 +1,6 @@
 <div align="justify">
 
-# Template não oficial para teses e dissertações no IAG-USP
+# Template não oficial para teses e dissertações no IAG
 
 Este template foi criado com o intuíto de ajudar todos que estejam nos passos finais de seus mestrados e doutorados. Sabemos que essa é uma época caótica e a falta de informações (ou de tempo para procurá-las) só causa mais estresse, e quanto menos estresse nessa época, melhor.
 
