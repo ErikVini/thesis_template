@@ -78,7 +78,7 @@
 
 % Line Numbers
 \usepackage{lineno}
-%\linenumbers  % Enables line numbering, comment this line to remove them
+\linenumbers  % Enables line numbering, comment this line to remove them
 
 % ------------------------------------------------------------------------------
 % Define dynamic chapter titles based on language
@@ -171,8 +171,8 @@
 \fancyhead{}  % Clear default header
 \fancyfoot{}  % Clear default footer
 \fancyhead[RO,LE]{\thepage}  % Page number on the right for odd pages and left for even pages
-\fancyhead[CE]{\nouppercase\leftmark}  % Section title centered on even pages
-\fancyhead[CO]{\nouppercase\rightmark} % Chapter title centered on odd pages
+\fancyhead[CE]{\nouppercase\leftmark}
+\fancyhead[CO]{\nouppercase\rightmark}
 \pagestyle{fancy}  % Apply fancyhdr configuration
 
 % Customization of section marks in headers
@@ -220,7 +220,7 @@
 []
 
 \titleformat{\subsection}[hang]{\Large\bfseries}  % Subsection format
-{\makebox[1cm]{\thesubsection}\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries}
+{{\thesubsection}\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries}
 []
 
 % Adjust spacing around titles

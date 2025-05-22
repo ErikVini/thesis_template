@@ -296,7 +296,7 @@
 
       Para não numerar as equações, é só colocar um asterisco no final do nome do ambiente (equation ou align $\rightarrow$ equation* ou align*).
 
-    \section{Fazendo plots no \ttt{Matplotlib}}
+    \subsection{Fazendo plots no \ttt{Matplotlib}}
       Para facilitar a vida, existe uma função que permite que você faça plots no \ttt{Matplotlib} com as dimensões exatas para colocar no seu texto, sem precisar mexer com as opções do \ttt{\textbackslash includegraphics}. A função é descrita em \url{https://jwalton.info/Embed-Publication-Matplotlib-Latex/}, e a função é:
       %
       \begin{lstlisting}[label=code, language=Python, numbers=left, autogobble]          
@@ -392,3 +392,7 @@
       \end{figure}
 
       Note que nenhum caractere dentro da imagem tem tamanho menor do que os da legenda (que é um bom teste para saber se o tamanho das letras e números está bom) e como a imagem ocupa quase toda a largura do texto mesmo sem ser necessário usar a opção [width=\textbackslash linewidth].
+
+  \section{Perguntas frequentes}
+      \subsection{Como desativar a numeração de linhas?}
+        Basta comentar a linha \texttt{\textbackslash linenumbers}, que está no arquivo \texttt{0.1-configurations.tex}.
