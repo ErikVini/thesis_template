@@ -1,0 +1,14 @@
+\begin{thebibliography}{2}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{{McMahon} et~al.(2013)}]{mcmahon2013vhs}
+{McMahon}, R.~G. et~al., \enquote{{First Scientific Results from the VISTA Hemisphere Survey (VHS)}}, \emph{The Messenger}, vol. 154, pp. 35--37, 2013.
+
+\bibitem[{{Mendes de Oliveira} et~al.(2019)}]{oliveira2019splus}
+{Mendes de Oliveira}, C. et~al., \enquote{{The Southern Photometric Local Universe Survey (S-PLUS): improved SEDs, morphologies, and redshifts with 12 optical filters}}, \emph{\mnras}, vol. 489, no.~1, pp. 241--267, 2019. \eprint{1907.01567}, \urlprefix\url{http://dx.doi.org/10.1093/mnras/stz1985}.
+
+\end{thebibliography}
